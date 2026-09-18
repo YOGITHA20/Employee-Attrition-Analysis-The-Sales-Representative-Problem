@@ -1,6 +1,7 @@
 # Employee Attrition Analysis — The Sales Representative Problem
 
 **Tools:** Python (Pandas) · MySQL (CTEs, Joins, Window Functions) · Power BI
+
 **Dataset:** IBM HR Analytics Employee Attrition & Performance (Kaggle), 1,470 employees
 
 ## Overview
@@ -56,11 +57,8 @@ Built an interactive dashboard with:
 
 **Who is most at risk (Q3):** The drill-down matrix revealed the sharpest finding of the project — attrition within Sales is not evenly spread. It's concentrated in the **Sales Representative** role (39.8% attrition) versus **Sales Executive** (17.5%). This reframes the entire narrative: it isn't a department-wide "Sales problem," it's a role-specific issue affecting a smaller, front-line group.
 
-*(Dashboard screenshot goes here — drag the image into this README on GitHub and it will embed automatically: `![dashboard](your-screenshot-filename.png)`)*
+The full interactive dashboard (`Employee_Attrition.pbix`) is included in this repo.
 
 ## Recommendation (Q4)
 Rather than a broad departmental review or a blanket compensation adjustment, the business should specifically examine the **Sales Representative role** — workload distribution, quota structure, and staffing levels — since this group drives the majority of Sales' overall attrition and is not explained by pay.
 
-## What I'd Explore Next
-- Whether Sales Representative headcount has grown or shrunk over time relative to workload
-- A simple logistic regression in Python to estimate attrition risk per employee, cross-checked against these SQL findings
